@@ -138,7 +138,7 @@ class murmur(
   $murmur_autoban_timeframe  = hiera('murmur_autoban_timeframe',  '120'),
   $murmur_bandwidth          = hiera('murmur_bandwidth',          '72000'),
   $murmur_configfilepath     = hiera('murmur_configfilepath',     '/etc/mumble-server.ini'),
-  $murmur_database           = hiera('murmur_database',           'murmur.sqlite'),
+  $murmur_database           = hiera('murmur_database',           ''),
   $murmur_host               = hiera('murmur_host',               ''),
   $murmur_imagemessagelength = hiera('murmur_imagemessagelength', '131072'),
   $murmur_logdays            = hiera('murmur_logdays',            '31'),
