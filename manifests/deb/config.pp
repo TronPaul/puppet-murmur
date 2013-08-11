@@ -40,6 +40,8 @@ Anchor['murmur::package::end'] -> Class['murmur::deb::config']
         ensure  => 'present',
         path    =>  $configfilepath,
         mode    => '0440',
+        owner => 'mumble-server',
+        group => 'mumble-server',
         content => template('murmur/etc/mumble-server.ini.erb'),
         require => Package['mumble-server'],
       }#end murmur_conf file
